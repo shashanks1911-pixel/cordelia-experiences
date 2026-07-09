@@ -188,7 +188,7 @@ export default function HostDashboard() {
             <StatCard
               label="Ship occupancy"
               value={`${dashboardSummary.occupancyPct}%`}
-              hint={`${dashboardSummary.bookings} of ${dashboardSummary.capacity} berths`}
+              hint={`${dashboardSummary.bookings.toLocaleString('en-IN')} of ${dashboardSummary.releasedBerths.toLocaleString('en-IN')} released berths`}
             />
             <StatCard
               label="Page conversion"

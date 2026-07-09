@@ -97,7 +97,7 @@ export default function FilterBar({ filters, onChange, onReset }: FilterBarProps
         </div>
 
         {/* Row 2 — category + duration chips */}
-        <div className="no-scrollbar -mx-1 flex items-center gap-2 overflow-x-auto px-1">
+        <div className="no-scrollbar -mx-1 flex items-center gap-2 overflow-x-auto px-1 lg:flex-wrap lg:gap-y-2.5">
           <button
             type="button"
             onClick={() => onChange({ category: 'all' })}

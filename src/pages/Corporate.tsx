@@ -84,7 +84,7 @@ export default function Corporate() {
               <Button variant="sunrise" size="lg" onClick={() => scrollToForm()}>
                 Plan your charter
               </Button>
-              <Button to="/host" variant="glass" size="lg" className="text-white!">
+              <Button to="/host" variant="glassDark" size="lg">
                 See the host dashboard
               </Button>
             </div>

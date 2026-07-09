@@ -29,8 +29,9 @@ export interface CabinSales {
   revenue: number;
 }
 
+/** Berth inventory released for this charter: totals match occupancyByDeck (1,476). */
 export const salesByCabin: CabinSales[] = [
-  { cabin: 'Interior', sold: 512, total: 640, revenue: 14_780_000 },
+  { cabin: 'Interior', sold: 512, total: 572, revenue: 14_780_000 },
   { cabin: 'Ocean View', sold: 374, total: 460, revenue: 14_020_000 },
   { cabin: 'Balcony', sold: 341, total: 380, revenue: 16_540_000 },
   { cabin: 'Suite', sold: 57, total: 64, revenue: 4_280_000 },
@@ -105,6 +106,7 @@ export const dashboardSummary = {
   bookings: 1_284,
   bookingsDeltaPct: 12.1,
   capacity: 1_800,
+  releasedBerths: 1_476,
   occupancyPct: 87,
   pageViews: 285_500,
   conversionPct: 2.9,

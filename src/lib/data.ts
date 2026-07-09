@@ -30,7 +30,7 @@ const SHOTS = {
 };
 
 const CABIN_SHOTS = {
-  interior: img('1566073771259-6a8506099945', 800),
+  interior: img('1611892440504-42a792e24d32', 800),
   oceanView: img('1582719478250-c89cae4dc85b', 800),
   balcony: img('1590490360182-c33d57733427', 800),
   suite: img('1578683010236-d716f9a3f461', 800),
@@ -223,7 +223,7 @@ export const experiences: Experience[] = [
         { time: '11:00 PM', title: 'Closing party on the aft deck' },
       ]),
     ],
-    cabins: makeCabins(24999 / 0.97),
+    cabins: makeCabins(24999),
     addons: [
       addon('workshop', 'Pitch clinic seat', 'A 90-minute working session on your deck with two partners.', 7999, true),
       ...COMMON_ADDONS,
@@ -305,7 +305,7 @@ export const experiences: Experience[] = [
         { time: '1:00 PM', title: 'Dock at Mumbai' },
       ]),
     ],
-    cabins: makeCabins(18499 / 0.97, 3),
+    cabins: makeCabins(18499, 3),
     addons: [
       addon('front-row', 'Front-row seats, both nights', 'Reserved row A–B for every main-stage show.', 3999, true),
       addon('meet', 'Greenroom meet & greet', 'Thirty minutes with the lineup after Saturday’s special.', 4999, true),
@@ -385,7 +385,7 @@ export const experiences: Experience[] = [
         { time: '12:00 AM', title: 'Secret set', detail: 'Location dropped on the ship app at midnight.' },
       ]),
     ],
-    cabins: makeCabins(27999 / 0.97),
+    cabins: makeCabins(27999),
     addons: [
       addon('backstage', 'Backstage pass', 'Side-of-stage access and the artist bar, all weekend.', 8999, true),
       ...COMMON_ADDONS,
@@ -468,7 +468,7 @@ export const experiences: Experience[] = [
         { time: '9:00 PM', title: 'Full-moon sound bath' },
       ]),
     ],
-    cabins: makeCabins(32999 / 0.97),
+    cabins: makeCabins(32999),
     addons: [
       addon('spa-journey', 'Extended spa journey', 'Three treatments across the sailing, scheduled around your classes.', 8499, true),
       ...COMMON_ADDONS.filter((item) => item.id !== 'spa'),
@@ -550,7 +550,7 @@ export const experiences: Experience[] = [
         { time: '1:00 PM', title: 'Dock at Mumbai' },
       ]),
     ],
-    cabins: makeCabins(21499 / 0.97),
+    cabins: makeCabins(21499),
     addons: [
       addon('roundtable', 'Reserved roundtable seat', 'Guaranteed seat at two CXO roundtables of your choice.', 4499, true),
       ...COMMON_ADDONS,
@@ -621,7 +621,7 @@ export const experiences: Experience[] = [
         { time: '9:00 PM', title: 'Closing party' },
       ]),
     ],
-    cabins: makeCabins(23499 / 0.97),
+    cabins: makeCabins(23499),
     addons: COMMON_ADDONS,
     faqs: [
       {
@@ -694,7 +694,7 @@ export const experiences: Experience[] = [
         { time: '5:30 PM', title: 'The Long Table', detail: 'Eight courses. Pacing is the sommelier’s problem, not yours.' },
       ]),
     ],
-    cabins: makeCabins(29999 / 0.97),
+    cabins: makeCabins(29999),
     addons: [
       addon('cellar', 'Rare-cellar pairing', 'The Long Table paired from the rare cellar instead of the festival list.', 6999, true),
       ...COMMON_ADDONS.filter((item) => item.id !== 'beverage'),
@@ -780,7 +780,7 @@ export const experiences: Experience[] = [
         { time: '7:00 PM', title: 'Deck exhibition', detail: 'Forty frames, printed on board, shown at sunset.' },
       ]),
     ],
-    cabins: makeCabins(41999 / 0.97),
+    cabins: makeCabins(41999),
     addons: [
       addon('print', 'Exhibition print package', 'Your three best frames printed archival A2, tubed for the journey home.', 4999, false),
       ...COMMON_ADDONS,
@@ -857,7 +857,7 @@ export const experiences: Experience[] = [
         { time: '7:00 PM', title: 'Captain’s family dinner' },
       ]),
     ],
-    cabins: makeCabins(16999 / 0.97),
+    cabins: makeCabins(16999),
     addons: [
       addon('kids-photo', 'Family photo story', 'A 40-photo edited album of your family’s weekend.', 4999, false),
       ...COMMON_ADDONS.filter((item) => item.id !== 'photos' && item.id !== 'beverage'),
@@ -934,7 +934,7 @@ export const experiences: Experience[] = [
         { time: '1:00 PM', title: 'Dock at Mumbai' },
       ]),
     ],
-    cabins: makeCabins(17499 / 0.97),
+    cabins: makeCabins(17499),
     addons: COMMON_ADDONS,
     faqs: BASE_FAQS,
     reviews: [

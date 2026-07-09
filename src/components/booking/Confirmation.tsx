@@ -46,6 +46,7 @@ export default function Confirmation({
           },
         }}
         className="sunrise-bg mx-auto grid size-16 place-items-center rounded-full text-white shadow-lift"
+        style={{ backgroundPosition: '85% 50%', backgroundSize: '300% 300%' }}
       >
         <Check className="size-8" strokeWidth={3} aria-hidden="true" />
       </motion.span>

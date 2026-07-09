@@ -1,7 +1,7 @@
 import type { ButtonHTMLAttributes, ReactNode } from 'react';
 import { Link } from 'react-router';
 
-type Variant = 'primary' | 'sunrise' | 'ghost' | 'glass' | 'outline';
+type Variant = 'primary' | 'sunrise' | 'ghost' | 'glass' | 'glassDark' | 'outline';
 type Size = 'sm' | 'md' | 'lg';
 
 const VARIANTS: Record<Variant, string> = {
@@ -11,6 +11,7 @@ const VARIANTS: Record<Variant, string> = {
     'sunrise-bg text-white shadow-[0_10px_28px_-8px_oklch(58%_0.19_35/0.65)] hover:shadow-[0_14px_34px_-8px_oklch(58%_0.19_35/0.8)] hover:brightness-[1.06]',
   ghost: 'text-ink hover:bg-ink/5',
   glass: 'glass text-ink hover:bg-white/90',
+  glassDark: 'glass-dark text-white hover:bg-white/20',
   outline: 'border border-ink/15 text-ink hover:border-ink/40 hover:bg-white',
 };
 

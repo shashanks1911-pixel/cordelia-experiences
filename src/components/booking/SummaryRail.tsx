@@ -58,31 +58,42 @@ export default function SummaryRail({ experience, selection, quote }: SummaryRai
           <span className="absolute top-1/2 -right-[1.85rem] size-5 -translate-y-1/2 rounded-full bg-surface shadow-inner" />
         </span>
 
-        <dl className="mt-5 space-y-2 text-sm">
-          {quote.lines.map((line) => (
-            <div key={line.label} className="flex justify-between gap-3">
-              <dt className="text-ink/55">
-                {line.label}
-                {line.detail && <span className="ml-1.5 text-xs text-ink/35">{line.detail}</span>}
-              </dt>
-              <dd className="font-medium text-ink tabular-nums">{formatINR(line.amount)}</dd>
-            </div>
-          ))}
-          <div className="flex justify-between gap-3 text-ink/55">
-            <dt>GST (18%)</dt>
-            <dd className="tabular-nums">{formatINR(quote.taxes)}</dd>
-          </div>
-        </dl>
+        {cabin ? (
+          <>
+            <dl className="mt-5 space-y-2 text-sm">
+              {quote.lines.map((line) => (
+                <div key={line.label} className="flex justify-between gap-3">
+                  <dt className="text-ink/55">
+                    {line.label}
+                    {line.detail && (
+                      <span className="ml-1.5 text-xs text-ink/35">{line.detail}</span>
+                    )}
+                  </dt>
+                  <dd className="font-medium text-ink tabular-nums">{formatINR(line.amount)}</dd>
+                </div>
+              ))}
+              <div className="flex justify-between gap-3 text-ink/55">
+                <dt>GST (18%)</dt>
+                <dd className="tabular-nums">{formatINR(quote.taxes)}</dd>
+              </div>
+            </dl>
 
-        <div className="mt-4 flex items-end justify-between border-t border-ink/8 pt-4">
-          <div>
-            <p className="text-xs text-ink/45">Total</p>
-            <p className="text-2xl font-semibold tracking-tight text-ink tabular-nums">
-              {formatINR(quote.total)}
-            </p>
-          </div>
-          <Barcode className="w-20 text-ink/60" />
-        </div>
+            <div className="mt-4 flex items-end justify-between border-t border-ink/8 pt-4">
+              <div>
+                <p className="text-xs text-ink/45">Total</p>
+                <p className="text-2xl font-semibold tracking-tight text-ink tabular-nums">
+                  {formatINR(quote.total)}
+                </p>
+              </div>
+              <Barcode className="w-20 text-ink/60" />
+            </div>
+          </>
+        ) : (
+          <p className="mt-5 rounded-2xl bg-sea-tint/70 px-4 py-3.5 text-sm leading-relaxed text-ink/55">
+            Pick a cabin to see your full fare — port charges and GST included,
+            no surprises at the gate.
+          </p>
+        )}
       </div>
     </aside>
   );

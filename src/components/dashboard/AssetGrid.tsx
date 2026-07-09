@@ -10,7 +10,7 @@ const KIND_ICON: Record<MarketingAsset['kind'], typeof Image> = {
 
 export default function AssetGrid() {
   return (
-    <ul className="grid gap-3 sm:grid-cols-2">
+    <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2">
       {marketingAssets.map((asset) => {
         const Icon = KIND_ICON[asset.kind];
         return (

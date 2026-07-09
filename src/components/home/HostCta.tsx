@@ -63,7 +63,7 @@ export default function HostCta() {
                 Host your event
                 <ArrowRight className="size-4.5" aria-hidden="true" />
               </Button>
-              <Button to="/host" variant="glass" size="lg" className="text-white!">
+              <Button to="/host" variant="glassDark" size="lg">
                 See the host dashboard
               </Button>
             </div>
