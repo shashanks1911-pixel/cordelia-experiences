@@ -7,6 +7,16 @@ cruise line — as an experience marketplace. Airbnb Experiences × Eventbrite,
 where the ship is only the venue. Built investor-ready: real copy, real
 booking math, real interactions.
 
+![Homepage hero](docs/media/home-hero.png)
+
+| Explore marketplace | Host dashboard |
+| --- | --- |
+| ![Explore](docs/media/explore.png) | ![Host dashboard](docs/media/host-dashboard.png) |
+
+<p align="center">
+  <img src="docs/media/boarding-pass.png" width="560" alt="Boarding-pass confirmation" />
+</p>
+
 ## Run it
 
 ```bash
