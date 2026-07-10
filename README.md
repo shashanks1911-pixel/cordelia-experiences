@@ -2,6 +2,8 @@
 
 **Don't book a cruise. Book an experience.**
 
+### ▶ [Live demo](https://shashanks1911-pixel.github.io/cordelia-experiences/)
+
 A high-fidelity clickable prototype reimagining Cordelia — India's largest
 cruise line — as an experience marketplace. Airbnb Experiences × Eventbrite,
 where the ship is only the venue. Built investor-ready: real copy, real
